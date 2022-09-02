@@ -1,0 +1,22 @@
+{
+  "name": "wiry-internet-expedite-5oi28",
+  "productName": "wiry-internet-expedite-5oi28",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "thaingoc",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w node-pty"
+  },
+  "dependencies": {
+    "node-pty": "^0.10.1",
+    "os": "^0.1.2",
+    "xterm": "^4.19.0"
+  },
+  "devDependencies": {
+    "electron": "19.0.6",
+    "electron-rebuild": "^3.2.9"
+  }
+}

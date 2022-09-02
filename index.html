@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+    <script src="node_modules/xterm/lib/xterm.js"></script>
+    <title>Auto install system!</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      .name-system {
+        padding-bottom: 10px;
+      }
+      .statistic {
+        text-align: center;
+      }
+      .ui-statistics {
+        border: 2px black;
+        border-style: solid;
+        padding: 50px;
+      }
+      .btn-activate {
+        padding: 8px 22px;
+        background: #ffffff;
+        border: 2px solid #000000;
+        box-shadow: 3px 3px 0 #000000, 2px 4px 6px #eee;
+        font-weight: 900;
+        letter-spacing: 1px;
+        -webkit-transition: all 150ms linear;
+        transition: all 150ms linear;
+      }
+      .terminal {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="ui-statistics">
+      <div class="statistic">
+        <div class="name-system">ACTIVATE VIRTUAL OS</div>
+        <button type="button" class="btn-activate" id="openBtn">
+          ACTIVATE
+        </button>
+      </div>
+    </div>
+    <div class="terminal" id="terminal"></div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
